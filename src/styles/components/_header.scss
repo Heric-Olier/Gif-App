@@ -1,0 +1,19 @@
+header {
+  background-color: $color-bg-2;
+  height: 6rem;
+  width: 100%;
+}
+
+.header_container {
+  @include flex(row, center, center);
+  height: 100%;
+//   padding: 0 10rem;
+  width: 100%;
+
+  h2 {
+    color: $color-text;
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: bold;
+  }
+}

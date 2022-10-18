@@ -1,0 +1,69 @@
+/*mixins*/
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin font($size, $weight, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin button($bg, $color, $border, $shadow) {
+  background-color: $bg;
+  color: $color;
+  border: $border;
+  box-shadow: $shadow;
+}
+
+@mixin transition($property, $duration) {
+  transition: $property $duration;
+}
+
+@mixin animation($name, $duration) {
+  animation: $name $duration;
+}
+
+@mixin border($width, $style, $color) {
+  border: $width $style $color;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+@mixin box-shadow($shadow) {
+  box-shadow: $shadow;
+}
+
+@mixin transform($transform) {
+  transform: $transform;
+}
+
+@mixin position($position, $top, $right, $bottom, $left) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin width($width) {
+  width: $width;
+}
+
+@mixin height($height) {
+  height: $height;
+}
+
+@mixin padding($padding) {
+  padding: $padding;
+}
+
+@mixin margin($margin) {
+  margin: $margin;
+}

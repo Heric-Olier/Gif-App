@@ -1,23 +1,23 @@
 /*mixins*/
 
 @mixin flex($direction, $justify, $align) {
+  align-items: $align;
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
-  align-items: $align;
 }
 
 @mixin font($size, $weight, $color) {
+  color: $color;
   font-size: $size;
   font-weight: $weight;
-  color: $color;
 }
 
 @mixin button($bg, $color, $border, $shadow) {
   background-color: $bg;
-  color: $color;
   border: $border;
   box-shadow: $shadow;
+  color: $color;
 }
 
 @mixin transition($property, $duration) {
@@ -45,11 +45,11 @@
 }
 
 @mixin position($position, $top, $right, $bottom, $left) {
-  position: $position;
-  top: $top;
-  right: $right;
   bottom: $bottom;
   left: $left;
+  position: $position;
+  right: $right;
+  top: $top;
 }
 
 @mixin width($width) {

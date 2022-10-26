@@ -35,7 +35,7 @@ export const GifGrid = ({ categories }) => {
               />
             );
           })}
-      <SeeMore onClick={handleSeeMore} />
+      <SeeMore onClick={handleSeeMore}  pages={images.length} />
         </div>
       )}
     </>

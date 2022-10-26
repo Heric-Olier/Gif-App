@@ -1,24 +1,24 @@
 .card {
-    position: relative;
-    width: 100%;
-    height: auto;
-    border-radius: 0.4rem;
-    overflow: hidden;
-    cursor: pointer;
-    transition: all .25s ease;
-    background-color: $color-bg-2;
-    transition: all .3s ease;
-    transform: scale(1) translateY(0);
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background-color: $color-bg-2;
+  transition: all 0.3s ease;
+  transform: scale(1) translateY(0);
 
-    &:nth-child(even) {
-        background-color: $color-bg-3;
-        grid-row: span 2;
-    }
+  &:nth-child(even) {
+    background-color: $color-bg-3;
+    grid-row: span 2;
+  }
 
-    &:hover {
-        transform: scale(1.05) translateY(-5px);
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.397);
-    }
+  &:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.397);
+  }
 
   p {
     background-color: $color-bg-2;

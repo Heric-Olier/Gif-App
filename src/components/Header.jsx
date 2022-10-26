@@ -1,4 +1,3 @@
-
 export const Header = () => {
   return (
     <header>
@@ -8,4 +7,3 @@ export const Header = () => {
     </header>
   );
 };
-

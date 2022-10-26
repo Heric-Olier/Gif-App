@@ -30,12 +30,12 @@ export const AddCategory = ({ onAddCategory }) => {
     window.scrollY ? setScroll(true) : setScroll(false);
   };
 
-  useEffect(() => { 
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scroll]); 
+  }, [scroll]);
 
   return (
     <form

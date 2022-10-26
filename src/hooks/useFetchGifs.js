@@ -1,18 +1,23 @@
 import { useEffect, useState } from "react";
 import {getGifs} from '../helpers/getGifs';
 
-export const useFetchGifs = ( categories ) => { // recibe como argumento la categoria
+export const useFetchGifs = ( categories, pageSearch ) => {
+  const [page, setPage] = useState(pageSearch);
   const [images, setImages] = useState([]); // creamos el estado images y su funcion setImages
   const [isLoading, setIsLoading] = useState(true); // creamos el estado isLoading y su funcion setIsLoading 
 
   useEffect(() => { 
-    // useEffect se ejecuta cada vez que el componente se renderiza
-    getGifs(categories).then(setImages); // getGifs es una funcion que retorna una promesa, cuando la promesa se resuelve se ejecuta el then
-    setIsLoading(false); // actualizamos el estado isLoading a false para indicar que ya se cargaron las imagenes
-  }, [categories]); // el segundo argumento de useEffect es un arreglo de dependencias, si el arreglo esta vacio se ejecuta solo una vez, si tiene un elemento se ejecuta cada vez que el elemento cambie, si tiene mas de un elemento se ejecuta cada vez que alguno de los elementos cambie
+    getGifs(categories, page).then((images) => { // llamamos a la funcion getGifs y pasamos como argumento la categoria y el estado page
+      setImages(images); // actualizamos el estado images con el valor de la promesa
+      setIsLoading(false); // actualizamos el estado isLoading con el valor de la promesa
+    });
+  }, [categories, page]); // el useEffect se ejecutara cada vez que categories o page cambien de valor
+
 
   return {
-    images, // retornamos el estado images
-    isLoading // retornamos el estado isLoading
+    images,
+    isLoading,
+    page,
+    setPage,
   };
 };

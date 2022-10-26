@@ -26,7 +26,7 @@ export const GifApp = () => {
         {categories.map((categories) => { // recorremos el arreglo de categorias y por cada categoria retornamos un componente GifGrid
           return <GifGrid key={categories} categories={categories} />; // pasamos la categoria al componente GifGrid
         })}
-        <SeeMore /> 
+        
       </main> 
       <Footer/>
     </> 

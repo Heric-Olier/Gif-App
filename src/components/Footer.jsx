@@ -6,7 +6,7 @@ export const Footer = () => {
         Copyright © 2022 | Coded with
         <span role="img" aria-label="heart">
           {" "}
-          ❤️{" "}
+          💙{" "}
         </span>
         by
         <a

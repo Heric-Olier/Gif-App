@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { CSSTransition, SwitchTransition } from "react-transition-group";
 import { Alerts } from "./Alerts";
 
 export const AddCategory = ({ onAddCategory }) => {
@@ -20,8 +19,8 @@ export const AddCategory = ({ onAddCategory }) => {
       });
       return;
     }
-    onAddCategory(inputValue.trim());
-    onAddCategory(inputValue.charAt(0).toUpperCase() + inputValue.slice(1));
+    onAddCategory(inputValue.trim()); 
+    onAddCategory(inputValue.charAt(0).toUpperCase() + inputValue.slice(1)); // actualizamos el valor del estado con el valor del input
     setInputValue("");
   };
 

@@ -12,8 +12,9 @@ export const GifApp = () => {
       });
       return;
     }
-    setCategories([newCategory, ...categories]); // agregamos el nuevo elemento al principio del arreglo
+    setCategories([newCategory]); // actualizamos el estado categories con el valor del input
   };
+
 
   return (
     <> 

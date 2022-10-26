@@ -1,0 +1,21 @@
+.footer {
+  @include flex(column, center, center);
+  height: 70px;
+  color: $color-bg;
+  background-color: $color-bg-2;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.footer-link {
+  color: $color-text;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  margin-left: 0.5rem;
+  &:hover {
+    color: $color-bg;
+  }
+}

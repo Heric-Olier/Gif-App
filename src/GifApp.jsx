@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { AddCategory, Alerts, GifGrid, Header } from "./components";
+import { Footer } from "./components/Footer";
+import { SeeMore } from "./components/SeeMore";
 
 export const GifApp = () => {
   const [categories, setCategories] = useState(["Pc Gaming"]); // creamos el estado categories y su funcion setCategories
@@ -23,8 +25,10 @@ export const GifApp = () => {
       <main> {/* componente GifGrid */}
         {categories.map((categories) => { // recorremos el arreglo de categorias y por cada categoria retornamos un componente GifGrid
           return <GifGrid key={categories} categories={categories} />; // pasamos la categoria al componente GifGrid
-        })} 
+        })}
+        <SeeMore /> 
       </main> 
+      <Footer/>
     </> 
   );
 };

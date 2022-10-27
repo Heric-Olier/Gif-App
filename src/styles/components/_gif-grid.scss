@@ -31,3 +31,30 @@
     font-weight: 500;
   }
 }
+
+.animate__animated {
+  color: $color-text;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animate__flash {
+  animation-name: flash;
+}
+
+@keyframes flash {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+
+
+

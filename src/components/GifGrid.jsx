@@ -2,12 +2,17 @@ import { GifGridItem } from "./GifGridItem";
 import { useFetchGifs } from "../hooks/useFetchGifs";
 import { SeeMore } from "./SeeMore";
 import { Alerts } from "./Alerts";
+import { motion } from "framer-motion"
 
 
 export const GifGrid = ({ categories }) => {
   const { images, isLoading, page, setPage } = useFetchGifs(categories, 20);
-  console.log(images.length, "images.length");
   
+  // console.log(images.length, "images.length");
+
+  
+  
+
   const handleSeeMore = () => {
    if (images.length >= 50) {
     Alerts.fire({
@@ -20,6 +25,21 @@ export const GifGrid = ({ categories }) => {
    }
   };
 
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: .2,
+      }
+    }
+  }
+  
+  const itemAnimated = {
+    hidden: { opacity: 0, y: 50, scale: 0.5 },
+    show: { opacity: 1, y: 0, scale: 1 }
+  }
+
   return (
     <>
       <div className="category-title">
@@ -28,18 +48,29 @@ export const GifGrid = ({ categories }) => {
       {isLoading ? (
         <p className="animate__animated animate__flash">Loading...</p>
       ) : (
-        <div className="card-grid">
+        <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+         className="card-grid">
           {images.map((img) => {
             return (
-              <GifGridItem
-                key={img.id}
-                {...img}
-              />
+              <motion.div
+              variants={itemAnimated}
+              key={img.id}
+              className="card"
+              >
+                <GifGridItem
+        
+                  key={img.id}
+                  {...img}
+                />
+              </motion.div>
             );
           })}
-      <SeeMore onClick={handleSeeMore}  pages={images.length} />
-        </div>
+        </motion.div>
       )}
+      <SeeMore onClick={handleSeeMore} pages={images.length} />
     </>
   );
-}
+};

@@ -4,7 +4,7 @@
 
 ### Tecnologias utilizadas:
 
-<img src="![React](https://i.imgur.com/NKvg8Lb.png)" width='34px' > <img src="![Sass](https://i.imgur.com/AzUYNSu.png)" width='34px' > <img src="![Motion](https://i.imgur.com/FvzmpoY.png)" width='34px' > <img src="![Vite](https://i.imgur.com/wl2RM5k.png)" width='34px' >
+<img src="https://i.imgur.com/NKvg8Lb.png" width='34px' > <img src="https://i.imgur.com/AzUYNSu.png" width='34px' > <img src="https://i.imgur.com/FvzmpoY.png" width='34px' > <img src="https://i.imgur.com/wl2RM5k.png" width='34px' >
 
 ---
 

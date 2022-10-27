@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { Alerts } from "./Alerts";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 export const AddCategory = ({ onAddCategory }) => {
   const [inputValue, setInputValue] = useState(""); // useState retorna un arreglo con dos elementos, el primero es el valor del estado y el segundo es una funcion que nos permite actualizar el valor del estado
@@ -41,6 +43,8 @@ export const AddCategory = ({ onAddCategory }) => {
       className={scroll ? "form-add-category active" : "form-add-category"} // si el usuario hace scroll se le agrega la clase active al form-add-category
       onSubmit={handleSubmit}
     >
+      <div className="form-group">
+        <FontAwesomeIcon icon={faSearch} />
       <input
         className="input-add-category" // si scroll es true se le agrega la clase active al input-add-category
         type="text"
@@ -48,6 +52,7 @@ export const AddCategory = ({ onAddCategory }) => {
         value={inputValue} // el valor del input es el valor del estado
         onChange={handleInputChange} // cada vez que el usuario escribe en el input se ejecuta la funcion handleInputChange
       />
+      </div>
     </form>
   );
 };

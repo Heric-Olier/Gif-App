@@ -4,7 +4,7 @@
 
 ### Tecnologias utilizadas:
 
-<img src="https://i.imgur.com/NKvg8Lb.png" width='34px' > <img src="https://i.imgur.com/AzUYNSu.png" width='34px' > <img src="https://i.imgur.com/FvzmpoY.png" width='34px' > <img src="https://i.imgur.com/wl2RM5k.png" width='34px' >
+<img src="https://i.imgur.com/NKvg8Lb.png" width='36px' > <img src="https://i.imgur.com/AzUYNSu.png" width='36px' > <img src="https://i.imgur.com/FvzmpoY.png" width='36px' > <img src="https://i.imgur.com/wl2RM5k.png" width='36px' >
 
 ---
 
@@ -29,7 +29,7 @@ hecha con React, Sass, Motion y Vite como empaquetador de dependencias.
 - [x] Grid
 - [x] Sass (variables, mixins, funciones, etc)
 
-
+---
 
 ![](https://i.imgur.com/659mTVi.jpg)
 

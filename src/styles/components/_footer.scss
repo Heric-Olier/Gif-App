@@ -6,16 +6,21 @@
   font-size: 0.9rem;
   text-align: center;
   line-height: 1.4;
-  margin-top: 3rem;
   padding: 1rem;
 }
 
 .footer-link {
   color: $color-text;
+  font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   margin-left: 0.5rem;
   &:hover {
     color: $color-bg;
   }
+}
+
+.heart {
+  color: $color-text;
+  margin: 0 0.5rem;
 }

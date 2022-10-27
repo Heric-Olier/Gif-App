@@ -1,13 +1,13 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+
 export const Footer = () => {
     
   return (
     <footer className="footer">
       <p>
         Copyright © 2022 | Coded with
-        <span role="img" aria-label="heart">
-          {" "}
-          💙{" "}
-        </span>
+        <FontAwesomeIcon icon={faHeart} className="heart" />
         by
         <a
           className="footer-link"

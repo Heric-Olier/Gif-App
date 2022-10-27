@@ -1,10 +1,14 @@
 import { useState } from "react";
 import { AddCategory, Alerts, GifGrid, Header } from "./components";
 import { Footer } from "./components/Footer";
-import { SeeMore } from "./components/SeeMore";
+import { activeTopButton } from "./hooks/activeTopButton";
+import { TopButton } from "./components/TopButton";
+
 
 export const GifApp = () => {
   const [categories, setCategories] = useState(["Pc Gaming"]); // creamos el estado categories y su funcion setCategories
+  const { active, scrollY } = activeTopButton(); // llamamos al hook activeTopButton
+  
 
   const handleAddCategory = (newCategory) => {
     if (categories.includes(newCategory.charAt(0).toUpperCase() + newCategory.slice(1))) { // si la categoria ya existe
@@ -29,6 +33,8 @@ export const GifApp = () => {
         
       </main> 
       <Footer/>
+      {active && <TopButton scrollY={scrollY} />} {/* si active es true, entonces mostramos el componente TopButton */}
+      
     </> 
   );
 };

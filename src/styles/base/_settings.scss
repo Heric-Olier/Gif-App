@@ -20,3 +20,26 @@ $animation-duration: 0.3s;
 /* Shadows */
 $shadow-1: 0 0 0 1px #373940;
 
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: $color-text $color-bg;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  
+  *::-webkit-scrollbar {
+    width: 14px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: $color-bg;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: $color-text;
+    border-radius: 20px;
+    border: 1px solid $color-bg;
+  }
+  
+

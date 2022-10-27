@@ -19,6 +19,7 @@ form {
   width: 60%;
   @include flex(row, center, center);
   position: relative;
+  transition: all 0.3s ease-in-out;
 
   svg {
     color: $color-text-2;
@@ -26,6 +27,13 @@ form {
     position: absolute;
     left: 1rem;
     z-index: 1;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:focus-within {
+    svg {
+      color: $color-text;
+    }
   }
 
   @media screen and (max-width: 768px) {

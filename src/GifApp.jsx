@@ -1,8 +1,6 @@
 import { useState } from "react";
-import { AddCategory, Alerts, GifGrid, Header } from "./components";
-import { Footer } from "./components/Footer";
+import { AddCategory, Alerts, GifGrid, Header, TopButton, Footer } from "./components";
 import { activeTopButton } from "./hooks/activeTopButton";
-import { TopButton } from "./components/TopButton";
 
 
 export const GifApp = () => {
@@ -24,9 +22,9 @@ export const GifApp = () => {
 
   return (
     <> 
-      <Header /> {/* componente Header */}
+      <Header /> 
       <AddCategory onAddCategory={handleAddCategory} /> {/* componente AddCategory */}
-      <main> {/* componente GifGrid */}
+      <main> 
         {categories.map((categories) => { // recorremos el arreglo de categorias y por cada categoria retornamos un componente GifGrid
           return <GifGrid key={categories} categories={categories} />; // pasamos la categoria al componente GifGrid
         })}

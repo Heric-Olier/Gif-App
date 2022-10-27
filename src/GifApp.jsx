@@ -4,7 +4,7 @@ import { activeTopButton } from "./hooks/activeTopButton";
 
 
 export const GifApp = () => {
-  const [categories, setCategories] = useState(["Pc Gaming"]); // creamos el estado categories y su funcion setCategories
+  const [categories, setCategories] = useState(["Anime"]); // creamos el estado categories y su funcion setCategories
   const { active, scrollY } = activeTopButton(); // llamamos al hook activeTopButton
   
 

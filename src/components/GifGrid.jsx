@@ -39,9 +39,10 @@ export const GifGrid = ({ categories }) => {
     <>
       <motion.div
         initial={{ opacity: 0, y: -80 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, type: "spring", stiffness: 100 }}
-       className="category-title">
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, type: "spring", stiffness: 100 }}
+        className="category-title"
+      >
         <h3>{categories}</h3>
       </motion.div>
       {isLoading ? (
@@ -55,8 +56,10 @@ export const GifGrid = ({ categories }) => {
         >
           {images.map((img) => {
             return (
-              <motion.div variants={itemAnimated} key={img.id} className="card">
-                <GifGridItem key={img.id} {...img} />
+              <motion.div 
+              variants={itemAnimated}
+              key={img.id} className="card">
+              <GifGridItem key={img.id} {...img} />
               </motion.div>
             );
           })}

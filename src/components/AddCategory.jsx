@@ -44,7 +44,7 @@ export const AddCategory = ({ onAddCategory }) => {
       <input
         className="input-add-category" // si scroll es true se le agrega la clase active al input-add-category
         type="text"
-        placeholder="Search Gifs"
+        placeholder="Search"
         value={inputValue} // el valor del input es el valor del estado
         onChange={handleInputChange} // cada vez que el usuario escribe en el input se ejecuta la funcion handleInputChange
       />

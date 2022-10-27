@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  border-radius: 0.4rem;
+  border-radius: 0.6rem;
   overflow: hidden;
   cursor: pointer;
   transition: all 0.25s ease;
@@ -12,7 +12,11 @@
 
   &:nth-child(even) {
     background-color: $color-bg-3;
-    grid-row: span 2;
+    grid-column: span 2;
+
+    @media (max-width: $breakpoint-mobile) {
+      grid-column: span 1;
+    }
   }
 
   &:hover {

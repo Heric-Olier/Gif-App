@@ -1,6 +1,6 @@
 form {
   @include flex(row, center, center);
-  background-color: $color-bg-3;
+  background-color: $color-bg;
   padding: 1.2rem;
   position: absolute;
   top: 96px;
@@ -15,19 +15,19 @@ form {
 }
 
 input {
-  background-color: #343a46;
-  border-radius: 5px;
+  background-color: $color-bg-4;
+  border-radius: 14px;
   border: none;
-  box-shadow: 0 0 0 1px #343a46;
-  color: #99a1b3;
-  font-size: 1.2rem;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.247);
+  color: $color-text;
+  font-size: 1rem;
   outline: none;
-  padding: 8px 15px;
+  padding: 16px 15px;
   transition: all 0.3s ease-in-out;
   width: 60%;
 
   &::placeholder {
-    color: #99a1b3;
+    color: $color-text-2;
   }
 
   @media screen and (max-width: 768px) {

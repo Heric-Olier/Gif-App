@@ -22,7 +22,9 @@ export const GifGrid = ({ categories }) => {
 
   return (
     <>
-      <h3 className="animate__animated animate__fadeIn">{categories}</h3>
+      <div className="category-title">
+      <h3 >{categories}</h3>
+      </div>
       {isLoading ? (
         <p className="animate__animated animate__flash">Loading...</p>
       ) : (

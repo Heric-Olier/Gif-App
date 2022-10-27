@@ -4,7 +4,7 @@
 
 ### Tecnologias utilizadas:
 
-<img src="https://cdn-icons-png.flaticon.com/512/753/753244.png" width='34px' > <img src="https://cdn-icons-png.flaticon.com/512/919/919831.png" width='34px' > <img src="https://reactjsexample.com/content/images/2020/04/motion.png" width='38px' > <img src="https://preview.redd.it/ddhpio05n9l61.png?width=410&format=png&auto=webp&s=9da01f746dbf4fac515155edf15bf9b7793ec0df" width='34px' >
+<img src="![React](https://i.imgur.com/NKvg8Lb.png)" width='34px' > <img src="![Sass](https://i.imgur.com/AzUYNSu.png)" width='34px' > <img src="![Motion](https://i.imgur.com/FvzmpoY.png)" width='34px' > <img src="![Vite](https://i.imgur.com/wl2RM5k.png)" width='34px' >
 
 ---
 
